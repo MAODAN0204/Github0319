@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="wyer.Views.ItemChartPage">
+    <ContentPage.Content>
+        <AbsoluteLayout BackgroundColor="#E3E9ED" 
+                        VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                        AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Grid RowSpacing="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                    <StackLayout  >
+                        <Grid Margin="2,10,3,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="1"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="TodayBtn"
+                                    Text="Today"
+                                    CornerRadius="8"
+                                    Margin="5,8"
+                                    FontSize="14"
+                                    TextColor="white"
+                                    BackgroundColor="#28487C"
+                                    BorderColor="#fff"
+                                    BorderWidth="2"
+                                    Clicked="Today_Click"
+                                    Grid.Column="0" />
+                            <Button  x:Name="WeekBtn"
+                                     Text="Week"
+                                    CornerRadius="8"
+                                    FontSize="14"
+                                    Margin="5,8"
+                                     FontFamily="Arial"
+                                    TextColor="#0070C0"
+                                     BorderColor="#fff"
+                                     BorderWidth="2"
+                                    BackgroundColor="#B9EDFF"
+                                    Clicked="Week_Click"
+                                     Grid.Column="1" />
+                            <Button  x:Name="MonthBtn"
+                                     Text="Month"
+                                    CornerRadius="8"
+                                    FontSize="12"
+                                    Margin="5,8"
+                                     FontFamily="Times Roman"
+                                    TextColor="#0070C0"
+                                    BorderColor="#fff"
+                                    BorderWidth="2"
+                                    BackgroundColor="#B9EDFF"
+                                    Clicked="Month_Click"
+                                    Grid.Column="2" />
+                            <Button x:Name="YearBtn"
+                                     Text="Year"
+                                    CornerRadius="8"
+                                    FontSize="14"
+                                    TextColor="#0070C0"
+                                    BorderColor="#fff"
+                                    BorderWidth="2"
+                                    BackgroundColor="#B9EDFF"
+                                    Clicked="Year_Click"
+                                    Margin="5,8"
+                                     Grid.Column="3" />
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+                <ScrollView Grid.Row="1" Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" Padding="15,0" Spacing="0">
+                        <!--load img-->
+                        <Image Source="load.gif" 
+                               HeightRequest="32"
+                               IsAnimationPlaying="true"
+                               x:Name="LoadImg"></Image>
+                        <Label x:Name="selectday"
+                               FontSize="Medium"
+                               TextColor="Black"
+                               IsVisible="true"
+                               Text="" />
+                        <!--type 1-->
+                        <StackLayout x:Name="Type1">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300"/>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                </Grid.RowDefinitions>
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Voltage"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                              Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="voltage1Chart" 
+                                                        Margin="10,5"
+                                                        HeightRequest="150" 
+                                                        Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                    
+                                    
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Input Power"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="InputPowerChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Output Power"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="OutputPowerChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="3">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Input Frequency"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="InputFrequencyChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="4">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Output Voltage"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="OutputVoltageChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Output Current"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="OutputCurrentChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       Margin="0,8"
+                                       Grid.Row="6">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Battery Voltage"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="BatteryVoltageChart" 
+                                                          HeightRequest="150" 
+                                                          Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                            </Grid>
+
+                        </StackLayout>
+                        <!--type 2-->
+                        <StackLayout x:Name="Type2">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300"/>
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                    <RowDefinition Height="300" />
+                                </Grid.RowDefinitions>
+                                <Frame BackgroundColor="#fff"
+                                           BorderColor="#7F7F7F"
+                                           CornerRadius="5"
+                                           Margin="0,8"
+                                           Grid.Row="0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Power"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                Grid.Row="0"/>
+                                        <forms:ChartView x:Name="power2Chart" 
+                                                        HeightRequest="150" 
+                                                        Margin="10,5"
+                                                        Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                <Frame BackgroundColor="#fff
+"                                           BorderColor="#7F7F7F"
+                                           CornerRadius="5"
+                                            Margin="0,8"
+                                            Grid.Row="1">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Battery Capacity"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="batteryChart" 
+                                                         HeightRequest="150" 
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+
+                                <Frame BackgroundColor="#fff"
+                                            BorderColor="#7F7F7F"
+                                           CornerRadius="5"
+                                            Margin="0,8"
+                                            Grid.Row="2">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 1"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="Temp1Chart" 
+                                                         HeightRequest="150"
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       BorderColor="#7F7F7F"
+                                       CornerRadius="5"
+                                       Margin="0,8"
+                                       Grid.Row="3">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 2"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="Temp2Chart" 
+                                                         HeightRequest="150" 
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       BorderColor="#7F7F7F"
+                                       CornerRadius="5"
+                                       Margin="0,8"
+                                       Grid.Row="4">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 3"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="Temp3Chart" 
+                                                         HeightRequest="150" 
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                
+                                <Frame BackgroundColor="white"
+                                       BorderColor="#7F7F7F"
+                                       CornerRadius="5"
+                                       Margin="0,8"
+                                       Grid.Row="5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 4"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0" ></Label>
+                                        <forms:ChartView x:Name="Temp4Chart" 
+                                                         HeightRequest="150" 
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                                <Frame BackgroundColor="white"
+                                       BorderColor="#7F7F7F"
+                                       CornerRadius="5"
+                                       Margin="0,8"
+                                       Grid.Row="6">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 5"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0"></Label>
+                                        <forms:ChartView x:Name="Temp5Chart" 
+                                                 HeightRequest="150" 
+                                                 Margin="10,5"
+                                                 Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+
+                                <Frame BackgroundColor="white"
+                                       BorderColor="#7F7F7F"
+                                       CornerRadius="5"
+                                       Margin="0,8"
+                                       Grid.Row="7">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="30" />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Temperature 6"
+                                               TextColor="#000"
+                                               FontSize="16"
+                                               HorizontalTextAlignment="center"
+                                                 Grid.Row="0" ></Label>
+                                        <forms:ChartView x:Name="Temp6Chart" 
+                                                         HeightRequest="150" 
+                                                         Margin="10,5"
+                                                         Grid.Row="1"/>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+                        <StackLayout VerticalOptions="FillAndExpand" Orientation="Vertical">
+                            <Label x:Name="nodata"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            FontSize="Large"
+                            TextColor="yellow" />
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+                
+            </Grid>
+            <AbsoluteLayout BackgroundColor="Transparent" 
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                            AbsoluteLayout.LayoutBounds=".02, .99, AutoSize, AutoSize"
+                            VerticalOptions="EndAndExpand">
+                <Picker TitleColor="DarkGray"
+                        IsVisible="false"
+                        SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                        x:Name="liname" >
+                </Picker>
+                <DatePicker x:Name="CalDate" Date="{Binding SelectedDate}" 
+                            Format="d" 
+                            DateSelected="Search_DataClick"
+                            IsVisible="false"
+                            Grid.Row="0" Grid.Column="1"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <ImageButton Source="schedule.png" BackgroundColor="Transparent"
+                                 x:Name="Daybtn"
+                                 Clicked="onDayClicked" 
+                                 Grid.Row="0"/>
+                    <ImageButton Source="floatbtn.png"  BackgroundColor="Transparent"
+                                 HeightRequest="40"
+                                 x:Name="Pickbtn"
+                                 Clicked="onPickerClicked"
+                                 Grid.Row="1"/>
+                </Grid>
+               
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

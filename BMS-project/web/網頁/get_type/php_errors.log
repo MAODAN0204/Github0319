@@ -1,0 +1,5 @@
+[12-Oct-2023 15:01:40 Asia/Taipei] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\nginx\html\get_type\index.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\nginx\html\get_type\index.php on line 14
+[19-Oct-2023 09:14:49 Asia/Taipei] PHP Notice:  Undefined index: Mac in C:\nginx\html\get_type\index.php on line 5

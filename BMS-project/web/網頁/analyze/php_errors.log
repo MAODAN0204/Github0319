@@ -1,0 +1,26 @@
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\analyze\index.php on line 3
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Notice:  Undefined index: ikind in C:\nginx\html\analyze\index.php on line 4
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 12
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 15
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant month - assumed 'month' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 18
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant year - assumed 'year' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 21
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Notice:  Undefined variable: sql in C:\nginx\html\analyze\index.php on line 42
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 48
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 51
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant month - assumed 'month' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 54
+[17-Oct-2023 11:27:12 Asia/Taipei] PHP Warning:  Use of undefined constant year - assumed 'year' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 57
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Notice:  Undefined index: ikind in C:\nginx\html\analyze\index.php on line 3
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 11
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 14
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant month - assumed 'month' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 17
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant year - assumed 'year' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 20
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Notice:  Undefined variable: sql in C:\nginx\html\analyze\index.php on line 41
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 47
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 50
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant month - assumed 'month' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 53
+[17-Oct-2023 11:27:30 Asia/Taipei] PHP Warning:  Use of undefined constant year - assumed 'year' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 56
+[17-Oct-2023 11:27:47 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 11
+[17-Oct-2023 11:27:47 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 14
+[17-Oct-2023 11:27:47 Asia/Taipei] PHP Warning:  Use of undefined constant today - assumed 'today' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 47
+[17-Oct-2023 11:27:47 Asia/Taipei] PHP Warning:  Use of undefined constant week - assumed 'week' (this will throw an Error in a future version of PHP) in C:\nginx\html\analyze\index.php on line 50
+[18-Oct-2023 16:23:29 Asia/Taipei] PHP Notice:  Undefined variable: sql in C:\nginx\html\analyze\index.php on line 41

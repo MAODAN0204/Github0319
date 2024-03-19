@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wyer.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:model="clr-namespace:wyer.Models"  
+             BackgroundColor="#d9d9d9"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="OnAddItem" />
+    </ContentPage.ToolbarItems>
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Image Source="load.gif" 
+               HeightRequest="32"
+               IsAnimationPlaying="true"
+               x:Name="LoadImg"></Image>
+        </StackLayout>
+        <ListView x:Name="ItemsList" Grid.Row="1"
+                  HorizontalOptions="Fill"
+                  ItemTapped="OnFrameTapped"
+                  SelectedItem="{Binding dev_mac}"
+                  SelectionMode="Single"
+                  RowHeight="90">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell  >
+                        <ViewCell.ContextActions>
+                            <MenuItem Clicked="DeleteItem_Clicked"
+                                      CommandParameter="{Binding dev_mac}"
+                                      Text="Delete" IsDestructive="True" />
+                        </ViewCell.ContextActions>
+                        
+                            <Frame HorizontalOptions="Fill" Padding="10,5" BackgroundColor="#fff" BorderColor="#999999"
+                                   CornerRadius="8" Margin="5">
+                            <Grid HorizontalOptions="FillAndExpand" Padding="8"
+                                    ColumnSpacing="3" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="25"/>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="ibattery48.png" 
+                                   HorizontalOptions="Start"
+                                    Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                   VerticalOptions="Start"
+                                    Grid.Column="0" />
+                            <Label Text="{Binding Text}" 
+                                    TextColor="#4D4D4D" 
+                                    Padding="10,0,0,0"
+                                    FontSize="16"
+                                    Grid.Row="0"
+                                    Grid.Column="1"/>
+                            <Label Text="{Binding dev_mac}" 
+                                    TextColor="Gray" 
+                                    HorizontalTextAlignment="end"
+                                    HorizontalOptions="EndAndExpand"
+                                    Padding="5,0"
+                                    Grid.Row="0"
+                                    Grid.Column="2"/>
+                            <Label Text="{Binding Remark}" 
+                                   TextColor="#FF66CC" 
+                                   Grid.Row="1"
+                                   Margin="12,0,0,0"
+                                   Grid.ColumnSpan="2"
+                                   Grid.Column="1"/>
+                            </Grid>
+
+                    </Frame>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
+
+</ContentPage>

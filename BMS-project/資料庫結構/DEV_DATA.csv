@@ -1,0 +1,15 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,,
+i_index,int(10),YES,,1,PRI,,自動編號
+dev_mac,char(32),YES,,2,PRI,,設備MAC
+i_type,int(10) unsigned,NO,,3,,,設備型態
+addr,char(32),NO,,4,,,電池號碼
+ser_number,varchar(45),NO,,5,,,序號
+man_name,text,NO,,6,,,設備名稱
+man_date,char(20),NO,,7,,,設備日期
+bms_ver,varchar(45),NO,,8,,,bms版本
+bms_date,char(20),NO,,9,,,bms日期
+temp1,varchar(45),NO,,10,,,
+temp2,varchar(45),NO,,11,,,
+temp3,varchar(45),NO,,12,,,
+temp4,varchar(45),NO,,13,,,
+temp5,varchar(45),NO,,14,,,

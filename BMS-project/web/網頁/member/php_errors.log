@@ -1,0 +1,4 @@
+[19-Sep-2023 13:30:12 Asia/Taipei] PHP Notice:  Undefined index: id in C:\nginx\html\member\index.php on line 4
+[19-Sep-2023 13:30:12 Asia/Taipei] PHP Notice:  Trying to get property 'num_rows' of non-object in C:\nginx\html\member\index.php on line 11
+[19-Sep-2023 13:32:14 Asia/Taipei] PHP Notice:  Undefined index: id in C:\nginx\html\member\index.php on line 4
+[19-Sep-2023 13:32:14 Asia/Taipei] PHP Notice:  Trying to get property 'num_rows' of non-object in C:\nginx\html\member\index.php on line 11

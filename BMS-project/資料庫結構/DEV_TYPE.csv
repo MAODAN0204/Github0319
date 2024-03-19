@@ -1,0 +1,6 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,,
+I_index,int(10) unsigned,YES,,1,PRI,,自動編號
+DEV_TYPE,int(11),YES,,2,PRI,,設備型態
+SUB_type,text,NO,,3,,,type1 A001名稱
+TPE_NAME,text,NO,,4,,,型態名稱
+spe_array,text,NO,,5,,,各欄位位數

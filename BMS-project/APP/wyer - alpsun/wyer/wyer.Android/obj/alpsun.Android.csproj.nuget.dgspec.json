@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "N:\\Dept\\EDA_IT\\電池模組產品開發案\\APP\\wyer - alpsun\\wyer\\wyer.Android\\alpsun.Android.csproj": {}
+  },
+  "projects": {
+    "N:\\Dept\\EDA_IT\\電池模組產品開發案\\APP\\wyer - alpsun\\wyer\\wyer.Android\\alpsun.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "N:\\Dept\\EDA_IT\\電池模組產品開發案\\APP\\wyer - alpsun\\wyer\\wyer.Android\\alpsun.Android.csproj",
+        "projectName": "alpsun.Android",
+        "projectPath": "N:\\Dept\\EDA_IT\\電池模組產品開發案\\APP\\wyer - alpsun\\wyer\\wyer.Android\\alpsun.Android.csproj",
+        "packagesPath": "C:\\Users\\oppchuan\\.nuget\\packages\\",
+        "outputPath": "N:\\Dept\\EDA_IT\\電池模組產品開發案\\APP\\wyer - alpsun\\wyer\\wyer.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\oppchuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Microcharts": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Microcharts.Forms": {
+              "target": "Package",
+              "version": "[0.9.5.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "UltimateXF": {
+              "target": "Package",
+              "version": "[2.3.2, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2622, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

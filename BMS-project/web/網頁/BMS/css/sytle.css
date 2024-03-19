@@ -1,0 +1,52 @@
+body{
+    font-size:12px;
+    height:100vh;
+    padding:10px;
+    background-image: url("../images/bobo_bg.jpg");
+    background-position:bottom;
+    background-size:cover;
+}
+
+.img52{
+    max-height:52px;
+}
+/*home*/
+.menubtn{
+    width:100%;
+    text-align: center;
+    line-height: 4;
+}
+iframe{
+    border: 0px solid #fff;
+}
+.relative-overflow{
+    position: relative;
+    overflow: scroll;
+}
+.bg-lightgray
+{
+    background: #dce2e5 ;
+
+}
+.border{
+    border-radius:7px;
+
+}
+#spinner,#downarea,#searcharea,#Add,#modi{
+    display: none;
+}
+/*real data */
+.board{
+    background:black;
+    position:relative;
+    color:white;
+    line-height: 2;
+    overflow:scroll;
+    border:1px solid #c1c1c1;
+    max-width: 100%;
+    height:800px;
+    padding:10px 5px;
+}
+label{
+    font-size:larger;
+}

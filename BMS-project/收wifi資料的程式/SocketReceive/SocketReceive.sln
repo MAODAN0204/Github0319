@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketReceive", "SocketReceive\SocketReceive.csproj", "{F9FEBF31-DD25-4C67-B1F8-14732DE2968E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Socket", "Socket\Socket.vdproj", "{7C1403ED-E5B9-4036-9A78-134928A678A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9FEBF31-DD25-4C67-B1F8-14732DE2968E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FEBF31-DD25-4C67-B1F8-14732DE2968E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FEBF31-DD25-4C67-B1F8-14732DE2968E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FEBF31-DD25-4C67-B1F8-14732DE2968E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1403ED-E5B9-4036-9A78-134928A678A6}.Debug|Any CPU.ActiveCfg = Debug
+		{7C1403ED-E5B9-4036-9A78-134928A678A6}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2EC688D-90C7-49D6-A06C-5E5B548915D5}
+	EndGlobalSection
+EndGlobal

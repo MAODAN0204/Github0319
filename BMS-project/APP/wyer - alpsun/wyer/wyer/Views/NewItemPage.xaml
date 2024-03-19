@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="wyer.Views.NewItemPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="New Item"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content >
+        <StackLayout >
+            <StackLayout HeightRequest="5" HorizontalOptions= "FillAndExpand">
+                <Image Source="additembg.jpg" 
+                        Aspect="Fill"
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="1000"/>
+            </StackLayout>
+            <StackLayout Margin="10" HorizontalOptions= "FillAndExpand">
+                <Label Text="Add Device"
+                       Margin="15,60"
+                       FontSize="Large"
+                       TextColor="#2E75B6" />
+                <Frame BackgroundColor="White"
+                       Padding="15,30,15,60"
+                       CornerRadius="10">
+                    <StackLayout>
+                        <Label Text="Device MAC"  Margin="10,0" TextColor="gray"/>
+                        <Entry x:Name="devmac" TextTransform="Uppercase" Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" Margin="0,20" TextColor="Gray" BackgroundColor="#f9f9f9"/>
+                        <Label Text="Device Name"  Margin="10,0" TextColor="gray"/>
+                        <Editor x:Name="devname" Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0,20" TextColor="Gray"  BackgroundColor="#f9f9f9"/>
+                        <Label Text="Remark"  Margin="10,0" TextColor="gray"/>
+                        <Editor x:Name="devremark" Text="{Binding Remark, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0,20" TextColor="Gray" BackgroundColor="#f9f9f9"/>
+                        <StackLayout Orientation="Horizontal" Margin="0,20">
+                            <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                            <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,9 @@
+[20-Sep-2023 17:06:50 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 10
+[20-Sep-2023 17:07:39 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 10
+[20-Sep-2023 17:08:43 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 10
+[20-Sep-2023 17:08:45 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 10
+[20-Sep-2023 17:08:46 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 10
+[20-Sep-2023 17:09:55 Asia/Taipei] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\nginx\html\checkdev\index.php on line 11
+[20-Sep-2023 17:10:44 Asia/Taipei] PHP Notice:  Trying to get property 'num_rows' of non-object in C:\nginx\html\checkdev\index.php on line 12
+[20-Sep-2023 17:11:28 Asia/Taipei] PHP Notice:  Trying to get property 'num_rows' of non-object in C:\nginx\html\checkdev\index.php on line 12
+[27-Sep-2023 08:38:40 Asia/Taipei] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\nginx\html\mysql_connect_wr.php on line 11

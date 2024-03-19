@@ -1,0 +1,7 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,,
+member_id,char(10),YES,,1,PRI,,會員編號
+dev_mac,char(32),YES,,2,PRI,,設備MAC
+dev_name,varchar(45),NO,,3,,,設備名稱
+remark,varchar(128),NO,,4,,,備註
+create_time,datetime,YES,,5,,,建立時間
+leave_time,datetime,NO,,6,,,刪除設備日期時間

@@ -1,0 +1,17 @@
+[27-Sep-2023 08:42:29 Asia/Taipei] PHP Warning:  Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) in C:\nginx\html\register\checkdata.php on line 8
+[27-Sep-2023 08:42:29 Asia/Taipei] PHP Warning:  Use of undefined constant email - assumed 'email' (this will throw an Error in a future version of PHP) in C:\nginx\html\register\checkdata.php on line 8
+[27-Sep-2023 08:42:29 Asia/Taipei] PHP Notice:  Undefined offset: 0 in C:\nginx\html\register\checkdata.php on line 15
+[27-Sep-2023 08:45:13 Asia/Taipei] PHP Notice:  Undefined offset: 0 in C:\nginx\html\register\checkdata.php on line 15
+[27-Sep-2023 08:45:36 Asia/Taipei] PHP Notice:  Undefined index: count in C:\nginx\html\register\checkdata.php on line 15
+[27-Sep-2023 09:30:21 Asia/Taipei] PHP Notice:  Undefined index: User in C:\nginx\html\register\checkdata.php on line 5
+[27-Sep-2023 09:30:21 Asia/Taipei] PHP Notice:  Undefined index: email in C:\nginx\html\register\checkdata.php on line 6
+[27-Sep-2023 09:36:51 Asia/Taipei] PHP Notice:  Undefined index: User in C:\nginx\html\register\checkdata.php on line 5
+[27-Sep-2023 09:36:51 Asia/Taipei] PHP Notice:  Undefined index: email in C:\nginx\html\register\checkdata.php on line 6
+[27-Sep-2023 09:37:16 Asia/Taipei] PHP Notice:  Undefined index: email in C:\nginx\html\register\checkdata.php on line 6
+[27-Sep-2023 09:59:32 Asia/Taipei] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\nginx\html\register\savedata.php on line 31
+[27-Sep-2023 10:02:02 Asia/Taipei] PHP Notice:  Undefined index: Tel in C:\nginx\html\register\savedata.php on line 8
+[27-Sep-2023 10:04:10 Asia/Taipei] PHP Notice:  Undefined index: Tel in C:\nginx\html\register\savedata.php on line 8
+[27-Sep-2023 10:11:38 Asia/Taipei] PHP Notice:  Undefined index: Phone in C:\nginx\html\register\savedata.php on line 8
+[27-Sep-2023 10:15:24 Asia/Taipei] PHP Notice:  Undefined index: Phone in C:\nginx\html\register\savedata.php on line 8
+[27-Sep-2023 10:16:44 Asia/Taipei] PHP Notice:  Undefined index: Phone in C:\nginx\html\register\savedata.php on line 8
+[27-Sep-2023 10:18:39 Asia/Taipei] PHP Notice:  Undefined index: Phone in C:\nginx\html\register\savedata.php on line 8

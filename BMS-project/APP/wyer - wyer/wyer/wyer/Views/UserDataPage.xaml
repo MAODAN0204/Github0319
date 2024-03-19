@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wyer.Views.UserDataPage"
+             >
+    <ContentPage.Content >
+
+                        <ScrollView
+                            >
+            <StackLayout>
+
+                <StackLayout HeightRequest="120"
+                                 Padding="20"
+                                  BackgroundColor="#54C2F0" >
+                                <Image Source="member.png"
+                                   HeightRequest="120"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                            </StackLayout>
+            
+            
+                            <Grid Margin="0,20,0,20"
+                                  Padding="15,0"
+                                  ColumnSpacing="0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50" />
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="110"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="24"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Member No."
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                       Padding="10,0"
+                                       TextColor="Black"
+                                       Grid.Row="0"
+                                       Grid.Column="0" />
+                                <BoxView Background="#E3FFFF"
+                                         Grid.Row="0"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                         Grid.Column="1"
+                                         Grid.ColumnSpan="2" />
+                                <Label x:Name="x0"
+                                        Text="Member No."
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       WidthRequest="300"
+                                        Grid.Row="0"
+                                        Grid.Column="1" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                         Grid.Row="1"
+                                         Grid.Column="1"
+                                        Grid.ColumnSpan="2" />
+                                <Label Text="User Name :"
+                                       TextColor="Black"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                       Padding="10,0"
+                                       Grid.Row="1"
+                                       Grid.Column="0" />
+                                <Entry x:Name="User_Name"
+                                        Text="User Name"
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       MaxLength="40"
+                                        Grid.Row="1"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="User_Nameimg"
+                                    BackgroundColor="#f9f9f9"
+                                    Source="pencil2_icon.png"
+                                    Grid.Row="1"
+                                    Grid.Column="2" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                     Grid.Row="2"
+                                     Grid.Column="1"
+                                    Grid.ColumnSpan="2" />
+                                <Label Text="Passwrod :"
+                                       TextColor="Black"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                       Padding="10,0"
+                                       Grid.Row="2"
+                                       Grid.Column="0" />
+                                <Entry x:Name="Passwrod"
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        Text="Password"
+                                       IsPassword="True"
+                                        VerticalOptions="Center"
+                                       MaxLength="45"
+                                        Grid.Row="2"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="Passwrodimg"
+                                        BackgroundColor="#f9f9f9"
+                                        Source="pencil2_icon.png"
+                                        Grid.Row="2"
+                                        Grid.Column="2" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                     Grid.Row="3"
+                                     Grid.Column="1"
+                                    Grid.ColumnSpan="2" />
+                                <Label Text="Nick Name :"
+                                       TextColor="Black"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                        Padding="10,0"
+                                       Grid.Row="3"
+                                       Grid.Column="0" />
+                                <Entry x:Name="Nick_Name"
+                                        Text="Nick Name"
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       MaxLength="45"
+                                        Grid.Row="3"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="Nick_Nameimg"
+                                        BackgroundColor="#f7f7f7"
+                                        Source="pencil2_icon.png"
+                                        Grid.Row="3"
+                                        Grid.Column="2" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                     Grid.Row="4"
+                                     Grid.Column="1"
+                                    Grid.ColumnSpan="2" />
+                                <Label Text="Telephone :"
+                                       TextColor="Black"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                        Padding="10,0"
+                                       Grid.Row="4"
+                                       Grid.Column="0" />
+                                <Entry x:Name="Telephone"
+                                        Text="Tel"
+                                       Keyboard="Numeric"
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       MaxLength="45"
+                                        Grid.Row="4"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="Telephoneimg"
+                                        BackgroundColor="#f7f7f7"
+                                        Source="pencil2_icon.png"
+                                        Grid.Row="4"
+                                        Grid.Column="2" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                     Grid.Row="5"
+                                     Grid.Column="1"
+                                    Grid.ColumnSpan="2" />
+                                <Label Text="Mobile :"
+                                       TextColor="Black"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"
+                                        Padding="10,0"
+                                       Grid.Row="5"
+                                       Grid.Column="0" />
+                                <Entry x:Name="Mobile"
+                                        Text="Mobile"
+                                        FontSize="16"
+                                       Keyboard="Numeric"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       MaxLength="45"
+                                        Grid.Row="5"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="Mobileimg"
+                                        BackgroundColor="#f7f7f7"
+                                        Source="pencil2_icon.png"
+                                        Grid.Row="5"
+                                        Grid.Column="2" />
+                                <!---->
+                                <BoxView Background="#f7f7f7"
+                                         Grid.Row="6"
+                                         Grid.Column="1"
+                                        Grid.ColumnSpan="2" />
+                                <Label Text="E-mail:"
+                                       TextColor="Black"
+                                       FontSize="16"
+                                       HorizontalOptions="End"
+                                        Padding="10,0"
+                                       VerticalOptions="Center"
+                                       Grid.Row="6"
+                                       Grid.Column="0" />
+                                <Entry x:Name="E_mail"
+                                        Text="Email"
+                                       Keyboard="Email"
+                                        FontSize="16"
+                                        TextColor="navy"
+                                        VerticalOptions="Center"
+                                       MaxLength="45"
+                                        Grid.Row="6"
+                                        Grid.Column="1" />
+                                <ImageButton x:Name="E_mailimg"
+                                    BackgroundColor="#f7f7f7"
+                                    Source="pencil2_icon.png"
+                                    Grid.Row="6"
+                                    Grid.Column="2" />
+
+                            </Grid>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinitionCollection />
+                                </Grid.RowDefinitions>
+                                <Button 
+                                    Text="Modify Save" 
+                                    Margin="20,5"
+                                    CornerRadius="10"
+                                    BackgroundColor="YellowGreen"
+                                    HorizontalOptions="Fill"
+                                    Clicked="Change_Clicked"
+                                    />
+                            </Grid>
+            </StackLayout>
+        </ScrollView>
+                    
+    </ContentPage.Content>
+</ContentPage>

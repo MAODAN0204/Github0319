@@ -1,0 +1,174 @@
+
+//week
+//$day_of_the_week = date('w', date('Y-m-d'));
+
+//$week_start_day = date('Y-m-d', strtotime((0-$day_of_the_week)."day",strtotime(date('Y-m-d'))));
+//echo($week_start_day);
+/*for($m=0;$m<7;$m++)
+{
+
+//	$countday=date('Y-m-d',strtotime($m.'day',strtotime($week_start_day)));
+//	$sql=$sql." select IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+//	$sql=$sql."IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+//	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today like CONCAT('2023-11-18','%') UNION all;
+}
+*/
+*/
+
+//today
+$sql="";
+
+for($i=0;$i<23;$i++)
+{
+	$sql=$sql."select IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql."IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d ".i."') UNION all ";
+}
+
+$sql=$sql."select IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql."IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 23') ";
+
+echo ($sql);
+
+/*
+
+	$sql="select IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql."IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 0') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 1') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 2') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 3')  UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 4') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 5')  UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 6')  UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 7')  UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 8') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 9') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 10') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 11')  UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 12') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 13') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 14') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 15') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 16') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 17') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 18') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 19') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 20') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 21') UNION all ";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 22') UNION all";
+	$sql=$sql." select  IFNULL(round(avg(".$field."),2),0) field,IFNULL(round(avg(A002),2),0)a002,IFNULL(round(avg(A003),0),0)a003,IFNULL(round(avg(A004),0),0)a004,IFNULL(round(avg(A005),0),0)a005,";
+	$sql=$sql." IFNULL(round(avg(A006),0),0)a006,IFNULL(round(avg(A037),0),0)a037,IFNULL(round(avg(A038),0),0)a038,IFNULL(round(avg(A039),0),0)a039,IFNULL(round(avg(A040),0),0)a040";
+	$sql=$sql." from esp.rec_data where dev_mac='".$Mac."' and A001='".$battery."' and h_today=date_format(now(),'%Y-%m-%d 23');";
+*/
+
+//realdataªº¸ê®Æ
+
+switch ($i_kind)
+{
+	case "today":
+	    $sql="select rec_data.dev_mac,substr(dat_time,1,13)dat_time,";
+	    break;
+	case "week":
+	    $sql="select rec_data.dev_mac,substr(dat_time,1,10)dat_time,";
+	    break;
+	case "month":
+	    $sql="select rec_data.dev_mac,substr(dat_time,1,10)dat_time,";
+	    break;
+	case "year":
+	    $sql="select rec_data.dev_mac,substr(dat_time,1,7)dat_time,";
+	    break;
+	default:
+	    $sql="select rec_data.dev_mac,substr(dat_time,1,13)dat_time,";
+  	    break;
+}
+
+for($i=1;$i<=79;$i++)
+{
+   switch (strlen(floor($i)))
+   {
+            case 1:
+		$s_field=$s_field."round(avg(A00".strval($i)."),2)A00".strval($i).",";
+                break;
+            case 2:
+                $s_field=$s_field."round(avg(A0".strval($i)."),2)A0".strval($i).",";
+                break;
+            case 3:
+                $s_field=$s_field."round(avg(A".strval($i)."),2)A".strval($i).",";
+                break;
+   }
+}
+
+$sql=$sql.substr($s_field,0,strlen($s_field)-1);
+
+
+if($battery=="")
+{
+    $sql=$sql." from rec_data where rec_data.dev_mac='".$Mac."' ";
+}else{
+    $sql=$sql." from rec_data where rec_data.dev_mac='".$Mac."' and A001='".$battery."'";
+}
+
+switch ($i_kind)
+{
+	case "today":
+	    $sql=$sql."and date_format(DAT_TIME,'%Y-%m-%d')=date_format(now(),'%Y-%m-%d') group by substr(dat_time,1,13),rec_data.dev_mac order by  substr(dat_time,1,13) Desc";
+	    break;
+	case "week":
+	    $sql=$sql."and substr(Dat_Time,1,10) <= date_sub(curdate(),interval 1 DAY) and substr(Dat_Time,1,10) >= date_sub(curdate(),interval 7 DAY) group by substr(dat_time,1,10),rec_data.dev_mac order by  substr(dat_time,1,10) Desc";
+	    break;
+	case "month":
+	    $sql=$sql."and date_format(DAT_TIME,'%Y-%m')=date_format(now(),'%Y-%m') group by substr(dat_time,1,10),rec_data.dev_mac order by  substr(dat_time,1,10) Desc";
+	    break;
+	case "year":
+	    $sql=$sql."and date_format(DAT_TIME,'%Y')=date_format(now(),'%Y') group by substr(dat_time,1,7),rec_data.dev_mac order by  substr(dat_time,1,7) Desc";
+	    break;
+	default:
+	    $sql=$sql."and date_format(DAT_TIME,'%Y-%m-%d')='".$i_kind."' group by substr(dat_time,1,13),rec_data.dev_mac order by  substr(dat_time,1,13) Desc";
+	    break;
+}

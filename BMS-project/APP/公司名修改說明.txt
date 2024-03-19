@@ -1,0 +1,22 @@
+
+程式要用VS2022以上(含)開啟,
+要修改成其他家公司的名稱及logo要修改的地方有
+
+在方案總管中android底下找 MainActivity.cs下的 MainActivity
+在裡面的 [Activity(Label="wyer",.....]
+修改上方的 Label成要改的公司名稱在app執行時, APP上顯示的名字就會是新的
+
+修改logo
+在上方的主要專案底下找wyer.ico, 更換這個圖示, 不更換檔案, 就會新logo了
+其他logo更換位子從檔案總管下去更換比較快
+在程式目錄下-->wyer.android-->Resources-->mipmap-hdpi、mipmap-mdpi、mipmap-xhdpi、mipmap-xxhdpi、mipmap-xxxhdpi, 更換裡面的圖檔, 不要更改檔名
+
+另一個logo為APP首頁的logo圖檔,
+一樣使用檔案總管更改
+程式目錄下-->wyer.android-->Resources-->drawable, 更換裡面的logo.png與wyer_logo.png圖檔, 不要更改檔名
+
+這樣就可以重建專案.
+
+再去做封存就可以轉APK檔了
+封存轉APK介紹
+https://learn.microsoft.com/zh-tw/xamarin/android/deploy-test/release-prep/?tabs=windows

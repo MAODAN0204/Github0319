@@ -1,0 +1,18 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,,
+id,int(11) unsigned zerofill,YES,,1,PRI,,自動編號並補0
+member_id,char(10),YES,,2,PRI,,會員編號
+Username,varchar(45),YES,,3,,,使用者名稱
+password,varchar(45),YES,,4,,,密碼
+nickname,varchar(45),NO,,5,,,膩稱
+tel,varchar(45),NO,,6,,,電話
+mobile,varchar(45),NO,,7,,,手機
+e_mail,varchar(45),YES,,8,,,mail
+text01,varchar(100),NO,,9,,,
+tex02,varchar(100),NO,,10,,,
+text03,varchar(100),NO,,11,,,
+text04,varchar(100),NO,,12,,,
+text05,varchar(100),NO,,13,,,
+num01,int(11),NO,,14,,,
+num02,int(11),NO,,15,,,
+num03,float,NO,,16,,,
+create_time,date,YES,,17,,,建立日期時間

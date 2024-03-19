@@ -1,0 +1,17 @@
+
+程式是放在192.168.1.248裡, 設定開機自動執行.
+
+如果要修改程式,
+改後的程式存放位子是
+"C:\Program Files (x86)\Default Company Name\DailySave\"
+"C:\Program Files (x86)\Default Company Name\Socket\"
+
+
+若要移到另外一台,
+可以使用安裝檔
+(安裝檔在這目錄下的這二個目錄裡, 各別有自己的安裝程式
+DailySaveToSql\DailySave\Release
+
+SocketReceive\Socket\Release
+
+再把更新後的應用程式檔案覆蓋就可以了.

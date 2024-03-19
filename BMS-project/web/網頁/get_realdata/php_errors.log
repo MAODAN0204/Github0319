@@ -1,0 +1,12 @@
+[12-Oct-2023 09:53:50 Asia/Taipei] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in C:\nginx\html\get_realdata\index.php on line 4
+[12-Oct-2023 09:55:48 Asia/Taipei] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in C:\nginx\html\get_realdata\index.php on line 4
+[12-Oct-2023 09:56:38 Asia/Taipei] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in C:\nginx\html\get_realdata\index.php on line 4
+[12-Oct-2023 09:57:03 Asia/Taipei] PHP Notice:  Undefined variable: _Get in C:\nginx\html\get_realdata\index.php on line 3
+[12-Oct-2023 09:57:03 Asia/Taipei] PHP Notice:  Trying to access array offset on value of type null in C:\nginx\html\get_realdata\index.php on line 3
+[13-Oct-2023 10:46:59 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[13-Oct-2023 11:18:09 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[18-Oct-2023 13:40:10 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[18-Oct-2023 14:32:40 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[18-Oct-2023 14:55:50 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[18-Oct-2023 14:57:34 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3
+[18-Oct-2023 14:59:36 Asia/Taipei] PHP Notice:  Undefined index: itype in C:\nginx\html\get_realdata\index.php on line 3

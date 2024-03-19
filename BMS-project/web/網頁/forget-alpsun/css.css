@@ -1,0 +1,21 @@
+﻿body {
+    
+    font-size:16px;
+}
+.img-80ps{
+    max-width:80%;
+    height:auto;
+}
+
+.text-red{
+    color:red;
+}
+.text-bold{
+    font-weight:bold;
+}
+.text-navy{
+    color:navy;
+}
+.btn-shadow{
+	box-shadow:0px 2px 3px 0px #737070;
+}

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             BackgroundColor="#D6D7D7"
+             x:Class="wyer.Views.SystemPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="30,20,30,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="36"/>
+                    <RowDefinition Height="46"/>
+                </Grid.RowDefinitions>
+                <ImageButton Source="user_info.png"
+                       HeightRequest="128"
+                       HorizontalOptions="CenterAndExpand" 
+                       BackgroundColor="#D6D7D7"
+                       Clicked="UserData_Clicked"
+                       Grid.Row="0"/>
+                <Label x:Name="nickname"
+                    TextColor="black"
+                    FontSize="20"
+                    HorizontalOptions="CenterAndExpand"
+                   Grid.Row="1"/>
+                <Button 
+                    Clicked="Logout_Clicked"
+                    Text="Log Out"
+                    CornerRadius="5"
+                    BorderColor="#1188FF"
+                    BorderWidth="1"
+                    BackgroundColor="#00B0F0" 
+                    Grid.Row="2"/>
+            </Grid>
+            <StackLayout Margin="0,15">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Frame Grid.Row="0" Padding="20,12" Margin="5,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Brocast" 
+                               HeightRequest="40"
+                               HorizontalTextAlignment="Start" 
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"
+                               FontSize="Subtitle"
+                               Grid.Column="0"/>
+                        <Switch IsToggled="true"
+                                OnColor="#00B0F0"
+                                ThumbColor="blue"
+                                Toggled="OnToggled"
+                                Grid.Column="1"/>           
+                        </Grid>
+                        
+                    </Frame>
+                    <Frame Grid.Row="1" Padding="20,12" Margin="5,0">
+                        <Label Text="About Us" HorizontalTextAlignment="Start" FontSize="Subtitle" HorizontalOptions="StartAndExpand" TextColor="navy"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="AboutPage_Clicked" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" Padding="20,12" Margin="5,0">
+                        <Label Text="Contact Us" HorizontalTextAlignment="Start" FontSize="Subtitle" HorizontalOptions="StartAndExpand" TextColor="navy"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ContactPage_Clicked" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" Padding="20,12" Margin="5,0">
+                        <Label Text="FQA" HorizontalTextAlignment="Start" FontSize="Subtitle" HorizontalOptions="StartAndExpand" TextColor="navy"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="FQAPage_Clicked" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="4" Padding="20,12" Margin="5,0">
+                        <Label Text="User Manual" HorizontalTextAlignment="Start" FontSize="Subtitle" HorizontalOptions="StartAndExpand" TextColor="navy"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ManualPage_Clicked" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

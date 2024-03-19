@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "dgSpecHash": "Epqut+RptFrvat9dEkuN9nA3Dw1nKU4B0m2biCL0yh+Uj5Jbe1O8yYuYDLj8arwxIQbJcbOpR5jJ6LveVmZv6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\chuanhsu\\Desktop\\電池模組產品開發案\\APP\\wyer - wyer\\wyer\\wyer.iOS\\wyer.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\ioscharts\\3.1.1.2\\ioscharts.3.1.1.2.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\microcharts\\0.9.5.9\\microcharts.0.9.5.9.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\microcharts.forms\\0.9.5.9\\microcharts.forms.0.9.5.9.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\skiasharp.views\\2.80.2\\skiasharp.views.2.80.2.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\ultimatexf\\2.3.2\\ultimatexf.2.3.2.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.6\\xamarin.communitytoolkit.2.0.6.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.essentials\\1.8.0\\xamarin.essentials.1.8.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.forms\\5.0.0.2612\\xamarin.forms.5.0.0.2612.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4\\4.0.0\\xamarin.swift4.4.0.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.core\\4.1.0\\xamarin.swift4.core.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.coreaudio\\4.1.0\\xamarin.swift4.coreaudio.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.coredata\\4.1.0\\xamarin.swift4.coredata.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.corefoundation\\4.1.0\\xamarin.swift4.corefoundation.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.coregraphics\\4.1.0\\xamarin.swift4.coregraphics.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.coreimage\\4.1.0\\xamarin.swift4.coreimage.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.coremedia\\4.1.0\\xamarin.swift4.coremedia.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.darwin\\4.1.0\\xamarin.swift4.darwin.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.dispatch\\4.1.0\\xamarin.swift4.dispatch.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.foundation\\4.1.0\\xamarin.swift4.foundation.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.metal\\4.1.0\\xamarin.swift4.metal.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.objectivec\\4.1.0\\xamarin.swift4.objectivec.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.os\\4.1.0\\xamarin.swift4.os.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.quartzcore\\4.1.0\\xamarin.swift4.quartzcore.4.1.0.nupkg.sha512",
+    "C:\\Users\\chuanhsu\\.nuget\\packages\\xamarin.swift4.uikit\\4.1.0\\xamarin.swift4.uikit.4.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "偵測到套件降級: Xamarin.Forms 從 5.0.0.2622 降到 5.0.0.2612。請直接從專案參考套件，以選取不同的版本。 \r\n wyer.iOS -> wyer -> Xamarin.Forms (>= 5.0.0.2622) \r\n wyer.iOS -> Xamarin.Forms (>= 5.0.0.2612)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-arm64",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}

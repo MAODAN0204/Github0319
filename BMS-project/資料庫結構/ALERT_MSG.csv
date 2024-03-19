@@ -1,0 +1,12 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,default,
+i_index,int(10) unsigned,YES,,1,PRI,,自動編號
+dev_mac,char(32),YES,,2,PRI,,設備MAC
+dat_time,datetime,NO,,3,,now(),建立日期時間
+field,varchar(45),NO,,4,,,
+int_status,int(10) unsigned,YES,,5,,,檢查狀態
+s_value,varchar(45),NO,,6,,,異常值
+temp01,varchar(45),NO,,7,,,電池號碼
+temp02,varchar(45),NO,,8,,,
+temp03,varchar(45),NO,,9,,,
+temp04,varchar(45),NO,,10,,,
+temp05,varchar(45),NO,,11,,,

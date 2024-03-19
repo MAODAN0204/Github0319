@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             x:Class="wyer.Views.ItemDetailPage"
+             Title="{Binding Title}">
+    <Grid Background="#f1f1f1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Image Source="load.gif" 
+                   Margin="0,2"
+                   HeightRequest="32"
+                   IsAnimationPlaying="true"
+                   x:Name="LoadImg"></Image>
+        </StackLayout>
+        <CollectionView x:Name="type1" Margin="5" Grid.Row="1" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" >
+                        <Frame HorizontalOptions="Fill" 
+                       Background="white"  CornerRadius="5" Margin="5">
+                            <Grid >
+                                <Grid.RowDefinitions >
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Battery ID：" 
+                               TextColor="Black" 
+                               Grid.Row="0"
+                                   Grid.Column="0"/>
+                                <Label Text="{Binding addr}"
+                               TextColor="Gray"
+                               HorizontalOptions="End" 
+                                Grid.Row="0"
+                                Grid.Column="1"/>
+                                <Label Text="Serial Number：" 
+                               TextColor="Black" 
+                                Grid.Row="1"
+                                Grid.Column="0"/>
+                                <Label Text="{Binding temp01}"
+                               TextColor="Gray"
+                               HorizontalOptions="End" 
+                                Grid.Row="1"
+                                Grid.Column="1"/>
+                                <Label Text="Manufacturer Type：" 
+                               TextColor="Black" 
+                               Grid.Row="2"
+                                Grid.Column="0"/>
+                                <Label Text="{Binding temp02}"
+                               TextColor="Gray"
+                               HorizontalOptions="End"       
+                                Grid.Row="2"
+                                Grid.Column="1"/>
+                                <Label Text="Std Voltage：" 
+                               TextColor="Black" 
+                               Grid.Row="3"
+                               Grid.Column="0"/>
+                                <Label Text="{Binding temp07}"
+                               TextColor="Gray"
+                               HorizontalOptions="End"       
+                               Grid.Row="3"
+                                Grid.Column="1"/>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <CollectionView x:Name="type2" Margin="5" Grid.Row="1" SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5" >
+                        <Frame HorizontalOptions="Fill" BackgroundColor="white"
+                               CornerRadius="5" >
+                            <Grid >
+                                <Grid.RowDefinitions >
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="32"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="battery_pack.png"
+                                       Grid.Row="0"
+                                       Grid.Column="0" ></Image>
+                                <Label Text="Battery ID：" 
+                                       TextColor="Black" 
+                                       VerticalOptions="End"
+                                       FontSize="Small"
+                                       Grid.Row="0"
+                                       Grid.Column="1"/>
+                                <Label Text="{Binding addr}"
+                                       TextColor="DodgerBlue"
+                                       HorizontalOptions="End" 
+                                       VerticalOptions="End"
+                                       FontSize="12"
+                                       Grid.Row="0"
+                                       Grid.Column="2"/>
+                                <Image Source="circle2.png"
+                                       Margin="3"
+                                       Grid.Row="1"
+                                       Grid.Column="0" ></Image>
+                                <Label Text="Serial Number：" 
+                                       TextColor="Black" 
+                                       FontSize="Small"
+                                        Grid.Row="1"
+                                        Grid.Column="1"/>
+                                <Label Text="{Binding temp01}"
+                                       TextColor="Gray"
+                                       HorizontalOptions="End" 
+                                       FontSize="12"
+                                        Grid.Row="1"
+                                        Grid.Column="2"/>
+                                <Image Source="circle2.png"
+                                       Margin="3"
+                                       Grid.Row="2"
+                                       Grid.Column="0" ></Image>            
+                                <Label Text="Manufacturer Name：" 
+                                       TextColor="Black" 
+                                       FontSize="Small"
+                                       Grid.Row="2"
+                                        Grid.Column="1"/>
+                                <Label Text="{Binding temp02}"
+                                       TextColor="Gray"
+                                       HorizontalOptions="End" 
+                                       FontSize="12"
+                                        Grid.Row="2"
+                                        Grid.Column="2"/>
+                                <Image Source="circle2.png"
+                                       Margin="3"
+                                       Grid.Row="3"
+                                       Grid.Column="0" ></Image>
+                                <Label Text="Manufacture Date：" 
+                                       TextColor="Black" 
+                                       FontSize="Small"
+                                       Grid.Row="3"
+                                       Grid.Column="1"/>
+                                <Label Text="{Binding temp03}"
+                                       TextColor="Gray"
+                                       HorizontalOptions="End" 
+                                       FontSize="12"
+                                       Grid.Row="3"
+                                       Grid.Column="2"/>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

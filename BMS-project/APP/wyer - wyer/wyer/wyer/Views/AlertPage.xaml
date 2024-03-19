@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wyer.Views.AlertPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Fill" VerticalOptions="Fill" >
+            <ScrollView >
+                <Grid  VerticalOptions="FillAndExpand"  BackgroundColor="#EBEFF2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Fill"  Grid.Row="0" >
+                        <ListView x:Name="AlertList"
+                      HorizontalOptions="Fill"
+                      SelectionMode="None"
+                      IsPullToRefreshEnabled="true">
+                            <ListView.RowHeight>
+                                <OnPlatform x:TypeArguments="x:Int32" 
+                                iOS="70" 
+                                Android="90" 
+                                WinPhone="90" />
+                            </ListView.RowHeight>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout HorizontalOptions="Fill" Orientation="Vertical"
+                                          BackgroundColor="#fff" Margin="0,5">
+                                            <Grid Margin="15,10" HorizontalOptions="FillAndExpand"
+                                     
+                                        ColumnSpacing="0">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="35"/>
+                                                    <RowDefinition Height="50"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="32"/>
+                                                    <ColumnDefinition />
+                                                    <ColumnDefinition  />
+                                                    <ColumnDefinition Width="24"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Image Source="info_org.png" 
+                                           Grid.Row="0"
+                                           Grid.Column="0" />
+                                                <Label Text="{Binding Title}" 
+                                           TextColor="#4472C4" 
+                                           Padding="5,0"
+                                           VerticalOptions="Center"
+                                           Grid.Row="0"
+                                           Grid.Column="1"/>
+                                                <Label Text="{Binding Dtime}" 
+                                           TextColor="Black" 
+                                           HorizontalTextAlignment="end"
+                                           HorizontalOptions="EndAndExpand"
+                                           Padding="5,0"
+                                           Grid.Row="0"
+                                           Grid.Column="2"/>
+                                                <Image Source="date_icon.png" 
+                                           HorizontalOptions="EndAndExpand"
+                                           Grid.Row="0"
+                                           Grid.Column="3" />
+                                                <Label Text="{Binding Description}" 
+                                           TextColor="red" 
+                                           Margin="0,0,10,0"
+                                           Padding="35,0,0,0"
+                                           HeightRequest="20"
+                                           Grid.Row="1"
+                                           Grid.ColumnSpan="4"/>
+                                            </Grid>
+
+                                        </StackLayout>
+
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" IsVisible="false">
+                        <Label Text="No Data"
+                           x:Name="msgText"
+                           IsVisible="false"
+                           FontSize="Medium"
+                           TextColor="DarkOrange"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

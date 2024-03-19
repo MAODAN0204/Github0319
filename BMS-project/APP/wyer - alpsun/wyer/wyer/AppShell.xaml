@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Views="clr-namespace:wyer.Views"
+       
+       FlyoutBehavior="Disabled"
+       x:Class="wyer.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="#fff" />
+                <Setter Property="Shell.ForegroundColor" Value="#0b1c4f" />
+                <Setter Property="Shell.TitleColor" Value="#22294b" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#222A35" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <ShellItem Route="Login">
+        <ShellContent Route="Login" ContentTemplate="{DataTemplate Views:LoginPage}" />
+    </ShellItem>
+
+    <TabBar Route="main">
+        <ShellContent  Title="Home" Icon="icon_menu2.png" Route="HomePage" ContentTemplate="{DataTemplate Views:HomePage}" />
+        <ShellContent Title="List" Icon="icon_list.png" Route="ItemsPage" ContentTemplate="{DataTemplate Views:ItemsPage}" />
+        <ShellContent Title="Record" Icon="icon_graph2.png"  Route="ItemDetailPage" ContentTemplate="{DataTemplate Views:ItemChartPage}" />
+    </TabBar>
+
+</Shell>

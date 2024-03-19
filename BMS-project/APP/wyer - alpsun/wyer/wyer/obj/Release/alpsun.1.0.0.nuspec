@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>alpsun</id>
+    <version>1.0.0</version>
+    <authors>alpsun</authors>
+    <icon>alpsun.ico</icon>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microcharts" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Microcharts.Forms" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="Rg.Plugins.Popup" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="UltimateXF" version="2.3.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.CommunityToolkit" version="2.0.6" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.8.0" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="5.0.0.2622" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netstandard2.0/alpsun.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\app_xfrom\wyer - alpsun\wyer\wyer\bin\Release\netstandard2.0\alpsun.dll" target="lib\netstandard2.0\alpsun.dll" />
+    <file src="D:\app_xfrom\wyer - alpsun\wyer\wyer\alpsun.ico" target="content\alpsun.ico" />
+    <file src="D:\app_xfrom\wyer - alpsun\wyer\wyer\alpsun.ico" target="contentFiles\any\netstandard2.0\alpsun.ico" />
+    <file src="C:\Users\miniepeng\Downloads\alphsun.ico" target="\alphsun.ico" />
+  </files>
+</package>

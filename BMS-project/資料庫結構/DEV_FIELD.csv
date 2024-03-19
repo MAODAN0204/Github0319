@@ -1,0 +1,6 @@
+COLUMN_NAME,COLUMN_TYPE,NONULL,COLUMN_COMMENT,ORDINAL_POSITION,COLUMN_KEY,,
+i_index,int(10) unsigned,YES,,1,PRI,,自動編號
+i_type,int(11),YES,,2,,,設備型態
+sql_field,char(20),YES,,3,,,sql欄位名
+dev_field,varchar(45),YES,,4,PRI,,設備英文名
+remark,varchar(100),NO,,5,,,
