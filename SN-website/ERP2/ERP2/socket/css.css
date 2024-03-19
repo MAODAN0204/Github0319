@@ -1,0 +1,15 @@
+﻿body {
+    
+    font-size:1.2vw;
+}
+.img-90ps{
+    max-width:90%;
+    height:auto;
+}
+
+.text-red{
+    color:red;
+}
+.text-bold{
+    font-weight:bold;
+}

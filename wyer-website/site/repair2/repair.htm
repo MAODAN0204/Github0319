@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>修繕登記中心</title> <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5"> 
+<style type="text/css">
+<!--
+.9-font {  font-size: 9pt; font-family:"Arial"}
+a:link {  color: #006633; text-decoration: none}
+a:visited {  color: #006633; text-decoration: none}
+a:hover {  color: #D05146; text-decoration: underline}
+a:active {  color: #FF0000; text-decoration: underline}
+-->
+</style>
+<script Language="JavaScript">
+<!--
+function Expand() {
+ if (""!=event.srcElement.id) {
+    var ch=event.srcElement.id + "child" 
+    var el=document.all[ch]
+    if (null!=el) el.style.display = "none" == el.style.display ? "" : "none"
+    event.returnValue=false
+ }
+}
+-->
+</script></head>
+
+<body BGCOLOR="#F0FFE8" onClick="Expand()" class="9-font">
+<center>
+<img SRC="img/title.gif" WIDTH="209" HEIGHT="35"> <hr>
+您好，這裡是本校 [修繕處理登記中心]<br>
+在您使用之前，請先思考您所<font color="#0000FF"><big><strong>報修的項目屬於哪一類？</font></big></strong><br>
+如果您實在不知該如何分類，請點選[無法分類]<br>
+您也可以按一下[說明]來瞭解詳細的分類情形 <br>
+<hr WIDTH="85%">
+<table WIDTH="85%" BORDER="1" CELLPADDING="2" CELLSPACING="0" BORDERCOLORLIGHT="#808080" BORDERCOLORDARK="#FFFFFF" BGCOLOR="#CCFFCC" CLASS="9-font"> 
+ <tr>
+  <td WIDTH="100%">
+   <div ALIGN="LEFT"><font SIZE="3"><a HREF="default.asp?WorkName=非電腦類">● 非電腦之一般設備報修</a></font>[<font COLOR="#0000FF"><span style="cursor:hand" title="顯示/關閉說明" id="1">說明</span></font>]</div>
+    <div id="1child" style="display:none">
+       <font color="#407048">[<font color="#0070B0">說明<font color="#407048">]舉凡教室門窗、課桌椅、建築物......此類與電腦無直接相關之設備。
+    </div>
+  </td>
+ </tr> 
+ <tr>
+  <td WIDTH="100%">
+   <div ALIGN="LEFT"><br><font SIZE="3">● 電腦相關設備報修</font>[<font COLOR="#0000FF"><span style="cursor:hand" title="顯示/關閉說明" id="2">說明</span></font>]<br> 
+    <div id="2child" style="display:none">
+       <font color="#407048"> [<font color="#0070B0">說明<font color="#407048">]與電腦相關之問題，包含機件故障、軟體執行發生錯誤......此類。
+    </div>
+   <table WIDTH="80%" BORDER="1" ALIGN="RIGHT" CLASS="9-font" BGCOLOR="#99FF99" CELLPADDING="2" CELLSPACING="0" BORDERCOLORLIGHT="#808080" BORDERCOLORDARK="#FFFFFF">
+    <tr><td>
+     <a HREF="default.asp?WorkName=故障維修">◎ 故障維修─軟硬體發生故障（損壞）需專人維修處理</a>
+    </td></tr>
+    <tr><td>
+     <a HREF="default.asp?WorkName=技術問題">◎ 技術問題─局部調整或設定就可以，請告訴我解決方法</a>
+    </td></tr>
+    <tr><td>
+     <a HREF="default.asp?WorkName=無法分類">◎ 無法分類─我實在不知該如何分類的問題</a>
+    </td></tr>
+   </table>
+  </td>
+ </tr> 
+</table>
+<div Align="Center" style="font-size:7pt">
+程式提供：<a href="http://www.wfes.tp.edu.tw" target="_blank"><img src="img/wfes_logo.gif" border="0" alt="台北市文山區萬芳國民小學" WIDTH="105" HEIGHT="28"></a>
+</div>
+</body>
+</html>
